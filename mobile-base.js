@@ -110,14 +110,8 @@ var init = function () {
  				{isBaseLayer:false,singleTile: true, ratio: 1.5}
                      ),
              new OpenLayers.Layer.WMS("Vicmap Classic",
- 	                        ["http://basemap1.pozi.com/geoserver/gwc/service/wms","http://basemap2.pozi.com/geoserver/gwc/service/wms","http://basemap3.pozi.com/geoserver/gwc/service/wms","http://basemap4.pozi.com/geoserver/gwc/service/wms"],
+ 	                        ["http://basemap1.pozi.com/geoserver/wms","http://basemap2.pozi.com/geoserver/wms","http://basemap3.pozi.com/geoserver/wms","http://basemap4.pozi.com/geoserver/wms"],
                      {layers: 'VicmapClassic',format: 'image/png8'}
-//            new OpenLayers.Layer.WMS("Vicmap Classic",
-//	                        "http://www.pozi.com/geoserver/wms",
-//                    {layers: 'VicmapClassicMitchell'}
-// singletile could reduce traffic but bigger files, except if ratio is really large
-//                    ,{ singleTile: true, ratio: 1.2 } 
-//,{attribution:"+"}
                     ),
             new OpenLayers.Layer.OSM("OpenStreetMap", null, {
                 transitionEffect: 'resize'
