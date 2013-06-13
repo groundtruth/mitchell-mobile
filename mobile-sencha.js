@@ -441,7 +441,7 @@ App.CaptureFormPopupPanel = Ext.extend(Ext.Panel, {
 					// Populate the combo on show
 					var latlon = map.getCenter();
 					latlon.transform(sm, gg);
-					propertyAddressStore.load({params:{longitude:latlon.lon,latitude:latlon.lat,config:'vicmap'}});
+					propertyAddressStore.load({params:{longitude:latlon.lon,latitude:latlon.lat,config:'basemap'}});
 
 				}				
 			}
