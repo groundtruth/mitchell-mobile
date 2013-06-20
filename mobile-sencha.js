@@ -14,7 +14,7 @@ App.SearchFormPopupPanel = Ext.extend(Ext.Panel, {
     scroll: false,
     layout: 'fit',
     fullscreen: Ext.is.Phone ? true : undefined,
-    url: 'http://s1.pozi.com/ws/rest/v3/ws_all_features_by_string_and_lga.php',
+    url: 'http://basemap.pozi.com/ws/rest/v3/ws_all_features_by_string_and_lga.php',
     errorText: 'Sorry, we had problems communicating with Pozi search. Please try again.',
     errorTitle: 'Communication error',
     maxResults: 6,
@@ -251,7 +251,7 @@ App.CaptureFormPopupPanel = Ext.extend(Ext.Panel, {
 		propertyAddressStore = new Ext.data.JsonStore({
 			proxy: {
 				type: 'scripttag',
-				url : 'http://s1.pozi.com/ws/rest/v3/ws_closest_properties.php',
+				url : 'http://basemap.pozi.com/ws/rest/v3/ws_closest_properties.php',
 				reader: {
 					type: 'json',
 					root: 'rows',
